@@ -1,13 +1,17 @@
-.body1{
-    flex-direction: column;
-}
 
+/* *{
+    margin: 0;
+} */
 body{
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: auto;
 }
 
 main{
+    width: 100%;
+    height: auto;
     background: rgb(190,224,230);
     background: linear-gradient(158deg, rgba(190,224,230,1) 19%, rgba(236,247,114,1) 50%, rgba(255,185,229,1) 95%);
 }
@@ -15,16 +19,14 @@ main{
 .flex{
     display: flex;
 }
+.body1{
+    flex-direction: column;
+}
 
 .wrap{
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-    margin-left: -100px;
-
 }
-
-
 
 .align-center{
     align-items: center;
@@ -35,6 +37,7 @@ main{
 }
 
 .header-text{
+    margin-right: -150px;
     align-items: center;
     text-align: center;
     width: 300px;
@@ -79,8 +82,8 @@ ul{
 }
 
 .ul{
+    width: 100%;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
 }
 
@@ -88,13 +91,12 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 35px;
     line-height: 16px;
     font-size: 19px;
 }
 
 .nav{
-    width: 100%;
+    width: auto;
     font-size: 20px;
 }
 
@@ -111,7 +113,6 @@ a{
 
 #panier{
     border: hidden;
-    width: 100%;
 }
 
 .svg-test {
@@ -150,7 +151,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 10%;
     background-color: #b5d77e;
 }
 
@@ -172,4 +172,10 @@ img{
 
 footer img{
     width: 180%;
+}
+
+@media screen and (max-width: 936px){
+    .header-text{
+        margin-left: -100px;
+    }
 }
