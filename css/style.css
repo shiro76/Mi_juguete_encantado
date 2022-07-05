@@ -16,6 +16,16 @@ main{
     display: flex;
 }
 
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin-left: -100px;
+
+}
+
+
+
 .align-center{
     align-items: center;
 }
@@ -25,13 +35,16 @@ main{
 }
 
 .header-text{
-    width: 20%;
+    align-items: center;
+    text-align: center;
+    width: 300px;
     justify-content: center;
     color: #fbfea4;
     font-size: 17px;
 }
 
 .header-text1{
+    width: 60%;
     text-align: center;
     font-family: poppins, sans-serif;
     color: #f5f94b;
@@ -40,6 +53,8 @@ main{
 }
 
 .header-text2{
+    width: 60%;
+    text-align: center;
     color: #f5f94b;
     font-size: 10px;
     text-shadow: #c8c8c8 1px 1px 0px, #b4b4b4 0px 2px 0px, #a0a0a0 0px 3px 0px, rgb(140 140 140 / 50%) 0px 4px 0px, #787878 0px 0px 0px, rgb(0 0 0 / 50%) 0px 5px 10px;
@@ -50,6 +65,8 @@ main{
 } */
 
 .header{
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     text-align: center;
     background-color: #a6d2ba;
@@ -62,14 +79,12 @@ ul{
 }
 
 .ul{
-    width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
 .li{
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,9 +93,16 @@ ul{
     font-size: 19px;
 }
 
+.nav{
+    width: 100%;
+    font-size: 20px;
+}
+
 li a{
+    width: 150px;
     color: #fbfea4;
     font-family: 'Patrick Hand', cursive;
+    margin-left: -10px;
 }
 
 a{
@@ -89,11 +111,12 @@ a{
 
 #panier{
     border: hidden;
+    width: 100%;
 }
 
 .svg-test {
     font-size: 80px;
-    height: 35%;
+    height: 35px;
 }
 
 .texte-main{
@@ -132,10 +155,11 @@ footer{
 }
 
 footer li{
-    margin: 5px;
+    margin: 10px;
 }
 
-img{width: 100%;
+img{
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -146,6 +170,6 @@ img{width: 100%;
     right: 100px;
 }
 
-.footer-text{
-    
+footer img{
+    width: 180%;
 }
