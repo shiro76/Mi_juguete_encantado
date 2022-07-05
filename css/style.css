@@ -7,6 +7,11 @@ body{
     padding: 0;
 }
 
+main{
+    background: rgb(190,224,230);
+    background: linear-gradient(158deg, rgba(190,224,230,1) 19%, rgba(236,247,114,1) 50%, rgba(255,185,229,1) 95%);
+}
+
 .flex{
     display: flex;
 }
@@ -107,11 +112,13 @@ a{
 }
 
 .img-main{
-    width: 100%;
+    position: relative;
+    left: 20%;
+    width: 60%;
     height: 100%;
     justify-content: center;
-    background: rgb(190,224,230);
-    background: linear-gradient(158deg, rgba(190,224,230,1) 19%, rgba(236,247,114,1) 50%, rgba(255,185,229,1) 95%);
+    align-items: center;
+    
 }
 
 footer{
